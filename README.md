@@ -5,7 +5,7 @@ A game patcher for Windows/PC games. Can patch huge files with small patch.
 
 This page contains an installation and using guide
 
-== Patcher ==
+##Patcher
 
 In root of builded patcher create folder 'patcher'. It must contain next files:
 * configuration.xml - a patcher configuration file
@@ -13,10 +13,10 @@ In root of builded patcher create folder 'patcher'. It must contain next files:
 * publisher_logo.png  - 248x112 publisher logo displayed at the form
 * version.txt - file that contain 1 integer digit defining current version number
 
-=== configuration.xml ===
+##configuration.xml
 
 
-{{{
+```
 #!xml
 <?xml version="1.0"?>
 <root>
@@ -35,14 +35,14 @@ In root of builded patcher create folder 'patcher'. It must contain next files:
 	<!-- opens in default browser when publisher logo clicked-->
 	<publisher_url>http://coolpublisher.com</publisher_url>
 </root>
-}}}
+```
 
-== Patch builder ==
+##Patch builder
 
 Create `source` directory in the root of patch builder. Place game clients in folders with name of it's version. Game clients must contains configured patcher with correct version.txt file matching with the index of folder (name).
 For example:
 
-{{http://s9.postimage.org/nczm2vryz/folders.png|builder folders}}
+http://goo.gl/PTqu2c
 
 Run patch builder and select from which to which version build a patch. Step must be one, because patcher supports only incremental update.
 Click "Make patch".
@@ -50,6 +50,6 @@ Result patch will be placed in output folder with name like 1_2.patch
 
 P.S. You may place this patch to any web hosting (even Dropbox)
 
-Code based on this [[https://github.com/einaros/RsyncNet|https://github.com/einaros/RsyncNet]].
+Code based on this https://github.com/einaros/RsyncNet
 
 License: MIT
