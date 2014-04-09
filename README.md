@@ -42,7 +42,8 @@ In root of builded patcher create folder 'patcher'. It must contain next files:
 Create `source` directory in the root of patch builder. Place game clients in folders with name of it's version. Game clients must contains configured patcher with correct version.txt file matching with the index of folder (name).
 For example:
 
-http://goo.gl/PTqu2c
+![example](http://s9.postimg.org/nczm2vryz/folders.png)
+
 
 Run patch builder and select from which to which version build a patch. Step must be one, because patcher supports only incremental update.
 Click "Make patch".
